@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="shopcss.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subspace Arú-House</title>
+</head>
+
+    
+<body>
+    <header>
+    
+        <!--<div id="rekl"> </div>-->
+        <table>
+            
+            <th></th><blockquote>    <h1 id="nepszer">Ez a árú-house <b id="roszvicc">(haha érted?)</b></h1> </blockquote> 
+        
+            <td>    <a href="subspace_webshop.html"><h3>Vissza a főoldalra</h3></a> 
+            </td>
+        </th>
+</table>
+            <img  id="pluh" src="leszez.jpg" width="150px" height="150px">
+    <nav>
+    <table>
+        <tr><th colspan='3' align=center></th></tr>
+        <tr>
+            <th align=left><a href="#upper">Felsőtest</a></th>
+            <th align=center><a href="#mid">~Törzs</a></th>
+            <th><a href="#freaky">Törzs alatti</a></th>
+        </tr>
+    </table>
+</nav>
+  </header>
+  
+  <main>      <section id="upper">
+    <h12 id="nepszer">A legnépszerűbb választás</h12>
+            <h2>Felső testre való</h2>
+            <img height=250px width=250px  src="nyaklács.jpg" alt="nyakl1">
+            <img height=250px width=250px  src="nyaklács2.jpg" alt="nyakl2">
+    <br>
+    <input type="number" id="numberInput" value="0">
+    
+    <h2 id="userNumber">Mennyit szeretne vásárolni:<label for="numberInput"></label></h2>
+    <b id="finalNumber">Végső ár: 0</b><b id="finalNumber">Ft</b>
+    <div>
+            <h4>Nyaklánc fajták</h4>
+            <div class="box"><p>Arany: 79 999Ft</p>
+            <p>Ezüst: 19 999Ft</p>
+            <p>Átlagos: 5000Ft</p>
+            </div>
+    </div>
+
+    <div>
+        <img height=250px width=250px  src="szeppierc.png" alt="orr">
+        
+<br>
+        <h4>Piercing fajták</h4>
+        <div class="box"><p>Arany: 29 999Ft - 8999Ft</p>
+        <p>Ezüst: 9999Ft - 2999Ft</p>
+        <p>Átlagos: 3000Ft</p>
+        </div>
+</div>
+        </section>
+        <section id="mid">
+            <h2>Törzs és körüli</h2>
+            <div>
+                <img height=250px width=250px  src="9XP2fP5p.jpg" alt="belt">
+                
+        <br>
+                <h4>Öv fajták</h4>
+                <div class="box"><p>Arany: 805 000 Ft</p>
+                <p>Ezüst: 305 000 Ft</p>
+                <p>Átlagos: 115 000 Ft</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 id="freaky">Törzs alatti</h2>
+            <div>
+                <img height=250px width=250px  src="gimppro.png" alt="cipellő">
+                
+        <br>
+                <h4>fajták</h4>
+                <div class="box"><p>Arany: 57 000 Ft</p>
+                <p>Ezüst: 39 000 Ft</p>
+                <p>Átlagos: 20 000 Ft</p>
+                </div>
+        </div>
+    
+        </section>
+    </main>
+         
+    <script>
+        const numberInput = document.getElementById('numberInput');
+        const userNumber = document.getElementById('userNumber');
+        const finalNumber = document.getElementById('finalNumber');
+
+        const baseNumber = 5000; // A megadott szám
+
+        numberInput.addEventListener('input', function() {
+            const userInput = parseFloat(numberInput.value) || 0; // A felhasználó által megadott szám
+            const result = baseNumber * userInput; // Végső szám: megadott szám + felhasználói szám
+            
+            // Kiírás
+            userNumber.textContent = 'Mennyit szeretne vásárolni:' + userInput 
+            finalNumber.textContent = 'Végső ár: ' + result;
+        });
+    </script>
+
+   
+
+
+    <footer>
+        <p id="enyem">&copy; Nagyon egyedi webshop és ugyan egyedi termékgondolat.</p>
+    </footer>
+    </body>
+</html>

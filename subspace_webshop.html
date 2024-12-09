@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="shopcss.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subspace Tripmine Shop</title>
+</head>
+
+
+<body>
+<header>
+    <!--<img id="BALR" src="balreklxcf.xcf">-->
+    
+    <blockquote><h1>Köszöntelek a Subspace shop<sup>&copy;</sup>-ba </h1></blockquote><br>
+    <img  id="pluh" src="leszez.jpg" width="150px" height="150px">
+    <nav>
+        <table>
+            <tr><th colspan='3' align=center></th></tr>
+            <tr>
+                <th  ><a href="#home">Főoldal</a></th>
+                <th align=center  id="közép"><a href="#about">Rólunk</a></th>
+                <th align=right id="jobbra"><a href="#contact">Kapcsolatfelvétel</a></th>
+            </tr>
+        </table>
+    </nav>
+</header>   
+<main>
+    <section id="home">
+        <h2>Jó napot kívánok.</h2>
+        <blockquote><p>Ezen a webshopon rátalálsz mindenre amit ajánlunk.  </p></blockquote>
+    </section>
+    <div><img src="nyaklács.jpg">
+        <img src="nyaklács2.jpg">
+    </div>
+    <p>Ez csak pár a sokból, a főrendlelőhelyet itt találja: <a id="shopp" href="subspacehaz.html">SUBSPACE ÁRÚ-HOUSE</a></p>
+    <section id="about">
+        <h2>Rólunk</h2>
+        <blockquote><p>Információ a szervezezettel kapcsolatban. </p>
+        <p>Mi csak e szerető szolgáltatás vagyunk, csak eladni szeretnénk dolgokat. </p>
+        <p>Az árú csak a profitotunkat és a kinézetét szolgálja. </p></blockquote>
+    </section>
+    <section>
+        <h2 id="contact">Kapcsolatfelvétel</h2>
+        <blockquote><p>Kérdezz vagy javasolj a <a id="titkos" href="akarod.hu" target="_blank">termékről<sup>&copy;</sup></a>. </p><br>
+        
+        <p>Kérem ide az ideiglenes ID: </p>
+            <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+             
+             
+            <div id="id01" class="modal">
+              <span onclick="document.getElementById('id01').style.display='none'"
+            class="close" title="Close Modal">&times;</span>
+             
+             
+              <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                  <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+             
+                <div class="container">
+                  <label for="uname"><b>Felhasználónév</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+             
+                  <label for="psw"><b>Jelszó</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+             
+                  <button type="submit">Bejelentkezés</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> nem vagyok robot
+                  </label>
+                </div>
+             
+                <div class="container" style="background-color:darkblue">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  
+                </div>
+              </form>
+             
+            </div>
+         
+            <p>email:<e-mail>submail@gmail.com</e-mail></p><br>
+        <p>És telefonszám: +36 70 545 6178</p></blockquote>
+        
+    </section>
+</main>  
+            <script>
+                // Get the modal
+                var modal = document.getElementById('id01');
+               
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                }
+                </script>
+
+</body>
+<footer>
+    <p id="enyem">&copy; Nagyon egyedi webshop és ugyan egyedi termékgondolat.</p>
+</footer>
+</html>
+
+
