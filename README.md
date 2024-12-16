@@ -1,1 +1,1 @@
-Köszöm hogy elolvastál
+Egy mappában legyenek a fájlok és képek
